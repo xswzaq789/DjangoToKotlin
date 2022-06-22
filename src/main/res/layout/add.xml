@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/cardText">
+
+    <EditText
+        android:id="@+id/postauthorlayout"
+        android:layout_width="340dp"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:gravity="top|start"
+        android:hint="Author" />
+
+    <EditText
+        android:id="@+id/posttitlelayout"
+        android:layout_width="340dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/postauthorlayout"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:gravity="top|start"
+        android:hint="Title"
+        app:boxStrokeColor="@color/cardWhite"
+        app:hintTextColor="@color/cardWhite" />
+
+
+    <EditText
+        android:id="@+id/postsubtitlelayout"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:layout_width="340dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/posttitlelayout"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:gravity="top|start"
+        android:hint="Subtitle"
+        app:boxStrokeColor="@color/cardWhite"
+        app:hintTextColor="@color/cardWhite" />
+
+    <EditText
+        android:id="@+id/postpostlayout"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:layout_width="340dp"
+        android:layout_height="150dp"
+        android:layout_below="@id/postsubtitlelayout"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:gravity="top|start"
+        android:hint="Post"
+        android:inputType="text"
+        app:boxStrokeColor="@color/cardWhite"
+        app:hintTextColor="@color/cardWhite" />
+
+
+    <Button
+        android:id="@+id/sendpost"
+        android:layout_width="340dp"
+        android:layout_height="60dp"
+        android:layout_below="@id/postpostlayout"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:background="@color/cardBlack"
+        android:text="@string/send"
+        android:textColor="@color/cardWhite" />
+
+
+</RelativeLayout>
